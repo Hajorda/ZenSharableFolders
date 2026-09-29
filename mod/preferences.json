@@ -2,7 +2,7 @@
   {
     "property": "zen.shareable-folders.server-url",
     "type": "string",
-    "label": "Server URL (your deployed Worker, e.g. https://zen-shareable-folders.you.workers.dev)",
+    "label": "Server URL (leave empty to use https://folder.hajorda.dev)",
     "default": ""
   },
   {

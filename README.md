@@ -51,6 +51,15 @@ npx wrangler login
 npm run deploy        # prints https://zen-shareable-folders.<you>.workers.dev
 ```
 
+#### Using your own domain
+
+Share links use whatever address the Worker is reached on. To serve it on `folder.hajorda.dev`:
+
+1. `hajorda.dev` must use Cloudflare DNS: in the Cloudflare dashboard, **Add a domain**, then change the nameservers at your registrar to the two Cloudflare gives you. Wait until the domain shows **Active**.
+2. `wrangler.toml` already has `routes = [{ pattern = "folder.hajorda.dev", custom_domain = true }]`. Run `npm run deploy`; Cloudflare creates the DNS record and HTTPS certificate.
+
+Links then look like `https://folder.hajorda.dev/f/<id>`. The `workers.dev` address keeps working too; links created through it keep that address.
+
 For local development, `npm run dev` serves on `http://localhost:8787`, and `npm test` runs the test suite (API, share page escaping, the mod's logic, and an owner→subscriber sync simulation).
 
 ### 2. Install the mod
@@ -58,9 +67,9 @@ For local development, `npm run dev` serves on `http://localhost:8787`, and `npm
 1. Install [Sine](https://github.com/CosmoCreeper/Sine) in Zen.
 2. In Sine's settings, allow unsafe/unofficial JS mods, then install from this repository's URL.
 3. Restart Zen.
-4. Open the mod's settings in Sine and set **Server URL** to your Worker URL. If you skip this, you'll be asked the first time you share.
+4. The mod uses `https://folder.hajorda.dev` by default. If you run your own server, set **Server URL** in the mod's settings in Sine.
 
-Your friends need the mod too, but they can use **your** link — the server is part of the link.
+Your friends need the mod too. They can follow links from any server, because the server is part of the link.
 
 ## Using it
 

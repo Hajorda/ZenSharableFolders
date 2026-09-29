@@ -6,7 +6,7 @@ import { unstable_startWorker } from "wrangler";
 let worker, base;
 
 before(async () => {
-  worker = await unstable_startWorker({ config: "wrangler.toml", dev: { server: { port: 0 }, inspector: false } });
+  worker = await unstable_startWorker({ config: "wrangler.toml", triggers: [], dev: { server: { port: 0 }, inspector: false } });
   base = (await worker.url).origin;
 });
 after(() => worker?.dispose());

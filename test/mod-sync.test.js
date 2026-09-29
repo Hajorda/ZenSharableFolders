@@ -12,7 +12,7 @@ const MAIN = read("shareable-folders.uc.js");
 
 let worker, server;
 before(async () => {
-  worker = await unstable_startWorker({ config: "wrangler.toml", dev: { server: { port: 0 }, inspector: false } });
+  worker = await unstable_startWorker({ config: "wrangler.toml", triggers: [], dev: { server: { port: 0 }, inspector: false } });
   server = (await worker.url).origin;
 });
 after(() => worker?.dispose());

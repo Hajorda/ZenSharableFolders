@@ -9,3 +9,7 @@ class_name = "LiveFolder"
 [[migrations]]
 tag = "v1"
 new_sqlite_classes = ["LiveFolder"]
+
+# Serve on your own domain. hajorda.dev must use Cloudflare DNS; Cloudflare
+# creates the DNS record and certificate for this subdomain on deploy.
+routes = [{ pattern = "folder.hajorda.dev", custom_domain = true }]

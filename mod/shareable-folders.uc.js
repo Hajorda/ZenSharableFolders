@@ -9,6 +9,8 @@
   const PREF_STATE = "zen.shareable-folders.state";
   const PREF_SERVER = "zen.shareable-folders.server-url";
   const PREF_WARN = "zen.shareable-folders.warn-private-urls";
+  // Used when the Server URL setting is empty (Sine doesn't apply preference defaults).
+  const DEFAULT_SERVER = "https://folder.hajorda.dev";
   const LOGIN_ORIGIN = "chrome://zen-shareable-folders";
   const PUSH_DEBOUNCE_MS = 2000;
   const TICK_MS = 30_000;
@@ -67,7 +69,7 @@
   }
 
   function serverUrl({ ask = false } = {}) {
-    let url = Services.prefs.getStringPref(PREF_SERVER, "").trim().replace(/\/+$/, "");
+    let url = (Services.prefs.getStringPref(PREF_SERVER, "").trim() || DEFAULT_SERVER).replace(/\/+$/, "");
     if (!url && ask) {
       const input = { value: "https://" };
       const ok = Services.prompt.prompt(

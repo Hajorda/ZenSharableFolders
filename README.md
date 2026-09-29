@@ -8,10 +8,10 @@
 
 Like Arc's shared folders, for [Zen Browser](https://zen-browser.app).
 
-![Zen](https://img.shields.io/badge/Zen-mod-5B5BF0)
-![Sine](https://img.shields.io/badge/installs%20with-Sine-A24BF2)
+![Zen](https://img.shields.io/badge/Zen-mod-065F46)
+![Sine](https://img.shields.io/badge/installs%20with-Sine-10B981)
 ![Cloudflare Workers](https://img.shields.io/badge/backend-Cloudflare%20Workers-F38020)
-![Version](https://img.shields.io/badge/version-0.1.0-22C55E)
+![Version](https://img.shields.io/badge/version-0.1.0-F5B83D)
 
 </div>
 

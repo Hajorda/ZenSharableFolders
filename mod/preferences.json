@@ -1,0 +1,14 @@
+[
+  {
+    "property": "zen.shareable-folders.server-url",
+    "type": "string",
+    "label": "Server URL (your deployed Worker, e.g. https://zen-shareable-folders.you.workers.dev)",
+    "default": ""
+  },
+  {
+    "property": "zen.shareable-folders.warn-private-urls",
+    "type": "checkbox",
+    "label": "Leave out URLs that look private (login tokens, local addresses) unless I allow them",
+    "default": true
+  }
+]

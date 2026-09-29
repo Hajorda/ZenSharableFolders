@@ -1,0 +1,27 @@
+/* Shareable Folders: a small dot after the name of live folders. */
+zen-folder[zsf-live] > .tab-group-label-container .tab-group-label::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-inline-start: 6px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+/* Folders you share: green. Folders you follow: blue. */
+zen-folder[zsf-live="owner"] > .tab-group-label-container .tab-group-label::after {
+  background: #22c55e;
+}
+zen-folder[zsf-live="subscriber"] > .tab-group-label-container .tab-group-label::after {
+  background: #3b82f6;
+}
+/* Sharing is stuck (token missing or rejected). */
+zen-folder[zsf-broken] > .tab-group-label-container .tab-group-label::after {
+  background: #f59e0b;
+}
+
+/* A tab the owner removed while you were using it. */
+tab[zsf-removed] .tab-label {
+  text-decoration: line-through;
+  opacity: 0.6;
+}

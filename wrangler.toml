@@ -1,0 +1,11 @@
+name = "zen-shareable-folders"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+
+[[durable_objects.bindings]]
+name = "LIVE_FOLDER"
+class_name = "LiveFolder"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["LiveFolder"]

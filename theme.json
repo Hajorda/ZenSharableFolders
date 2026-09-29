@@ -4,6 +4,7 @@
   "description": "Share a Zen folder as a live link. Everyone who adds it sees your changes in real time, like Arc's shared folders.",
   "homepage": "https://github.com/hajorda/ZenSharableFolders",
   "readme": "https://raw.githubusercontent.com/hajorda/ZenSharableFolders/main/README.md",
+  "image": "https://raw.githubusercontent.com/hajorda/ZenSharableFolders/main/assets/logo.png",
   "author": "hajorda",
   "version": "0.1.0",
   "style": {
@@ -12,18 +13,30 @@
   "preferences": "mod/preferences.json",
   "scripts": {
     "mod/core.uc.js": {
-      "include": ["chrome://browser/content/browser.xhtml"],
+      "include": [
+        "chrome://browser/content/browser.xhtml"
+      ],
       "loadOrder": 10
     },
     "mod/zen-adapter.uc.js": {
-      "include": ["chrome://browser/content/browser.xhtml"],
+      "include": [
+        "chrome://browser/content/browser.xhtml"
+      ],
       "loadOrder": 11
     },
     "mod/shareable-folders.uc.js": {
-      "include": ["chrome://browser/content/browser.xhtml"],
+      "include": [
+        "chrome://browser/content/browser.xhtml"
+      ],
       "loadOrder": 12
     }
   },
-  "tags": ["Folders", "Sharing", "Sync"],
-  "fork": ["zen"]
+  "tags": [
+    "Folders",
+    "Sharing",
+    "Sync"
+  ],
+  "fork": [
+    "zen"
+  ]
 }

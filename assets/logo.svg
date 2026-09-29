@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Shareable Folders logo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5B5BF0"/>
+      <stop offset="1" stop-color="#A24BF2"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EEF0FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="url(#bg)"/>
+  <!-- folder back with tab -->
+  <path d="M24 42a9 9 0 0 1 9-9h19.5a6 6 0 0 1 4.3 1.8L62 40h33a9 9 0 0 1 9 9v6H24z" fill="#C9CCFF"/>
+  <!-- folder front -->
+  <rect x="24" y="48" width="80" height="50" rx="9" fill="url(#front)"/>
+  <!-- live signal -->
+  <circle cx="64" cy="79" r="6.5" fill="#22C55E"/>
+  <path d="M52.5 70.5a15 15 0 0 1 23 0" fill="none" stroke="#6D5CF2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M44.5 63.5a26 26 0 0 1 39 0" fill="none" stroke="#6D5CF2" stroke-width="5" stroke-linecap="round" opacity="0.55"/>
+</svg>

@@ -6,6 +6,7 @@
   "readme": "https://raw.githubusercontent.com/hajorda/ZenSharableFolders/main/README.md",
   "image": "https://raw.githubusercontent.com/hajorda/ZenSharableFolders/main/assets/logo.png",
   "author": "hajorda",
+  "ai": "yes",
   "version": "0.1.0",
   "style": {
     "chrome": "mod/userChrome.css"
